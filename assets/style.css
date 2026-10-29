@@ -13,3 +13,6 @@ body{font-size:16px}a,a:hover,a:focus-visible,.abstract-toggle,.abstract-toggle:
 
 /* Preserve the full proportions of the supplied temporary portrait */
 .portrait:has(img){aspect-ratio:auto;height:auto}.portrait img{height:auto;object-fit:contain}
+
+/* Phone layout: smaller portrait and compact header */
+@media(max-width:680px){.header-inner{min-height:0;padding:14px 0 10px}main{padding:28px 0 48px}.home{gap:24px}.portrait{width:min(200px,55%)}.intro h1{font-size:30px;margin-bottom:18px}}
